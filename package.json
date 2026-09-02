@@ -1,0 +1,29 @@
+{
+  "name": "dominox-server",
+  "version": "1.0.0",
+  "description": "Dominox Node.js Game Server with Socket.IO, MongoDB, and Firebase Auth",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "tunnel": "node tunnel.js",
+    "ngrok": "node ngrok.js",
+    "live": "concurrently \"npm start\" \"npm run ngrok\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.0.0",
+    "localtunnel": "^2.0.2",
+    "mongodb": "^7.6.0",
+    "mongoose": "^8.3.0",
+    "ravendb": "^5.4.0",
+    "socket.io": "^4.7.5",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "ngrok": "^5.0.0-beta.2"
+  }
+}
